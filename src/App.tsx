@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Food from './Food'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() { //JSX
+
+  let foods = [
+    {
+      name: 'کباب', price: 100000, isFoodParty: false,
+      comments: [
+        { text: 'خوب بود', rate: 5 },
+        { text: 'گرون بود', rate: 2 },
+      ]
+    },
+    {
+      name: 'جوجه', price: 90000, isFoodParty: false,
+      comments: [
+        { text: 'خوب بود', rate: 4 },
+        { text: 'بد بود', rate: 1 },
+      ]
+    },
+    {
+      name: 'فلافل', price: 30000, isFoodParty: true,
+      comments: [
+        { text: 'خوب بود', rate: 5 },
+        { text: 'گرون بود', rate: 2 },
+      ]
+    },
+    {
+      name: 'پیتزا', price: 200000, isFoodParty: false,
+      comments: [
+        { text: 'خوب بود', rate: 5 },
+        { text: 'مو بود', rate: 1 },
+      ]
+    }
+  ]
+
+  return <>
+    {
+      foods.map((x, i) => <><Food key={i} foodinfo={x}></Food><hr /><hr /></>)
+    }
+  </>
 }
 
-export default App;
