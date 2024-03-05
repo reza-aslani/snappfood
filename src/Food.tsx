@@ -20,6 +20,7 @@ export default function Food(props: { foodinfo: { name: string, price: number, i
         onChange={e => setIsSelected(e.target.checked)} ></input>
       <h1>{props.foodinfo.name}</h1>
       <h3>{props.foodinfo.price} تومان</h3>
+      <h3>{props.foodinfo.price}0 ریال</h3>
 
       <h2>Comments:</h2>
       {
