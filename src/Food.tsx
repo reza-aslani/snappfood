@@ -1,7 +1,8 @@
 
 import { useState } from 'react'
 import Comment from './Comment'
-//خوشکلمزه
+import { Button } from '@mui/material'
+//test pr
 export default function Food(props: { foodinfo: { name: string, price: number, isFoodParty: boolean, comments: any[] } }) { //JSX
 
   //let isSelected: boolean = false
@@ -28,6 +29,8 @@ export default function Food(props: { foodinfo: { name: string, price: number, i
         )
       }
 
-      <button>سفارش دهید</button>
+      {/* <button>سفارش دهید</button> */}
+      <Button variant="contained">سفارش دهید</Button>
+
     </div>
 }
