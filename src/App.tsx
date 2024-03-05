@@ -37,7 +37,7 @@ export default function App() { //JSX
   return <>
     {
       // foods.map((x, i) => <><Food key={i} foodinfo={x}></Food><hr /><hr /></>)
-      foods.map((x, i) => <><FoodCard></FoodCard><hr /><hr /></>)
+      foods.map((x, i) => <><FoodCard key={i} ></FoodCard><hr /><hr /></>)
     }
   </>
 }
