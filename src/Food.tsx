@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import Comment from './Comment'
-
+//خوشکلمزه
 export default function Food(props: { foodinfo: { name: string, price: number, isFoodParty: boolean, comments: any[] } }) { //JSX
 
   //let isSelected: boolean = false
